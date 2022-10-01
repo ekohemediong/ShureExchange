@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shure Exchange</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="icon" type="image/png" href="new.png" sizes="16x16"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+
+    <link href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    <style>
+        body{
+        //background-image:url("back.jpeg");
+        background:white;
+        background-position:fixed;
+        margin:0;
+        }
+        *{
+    font-family: 'Poiret One', cursive;
+        }
+        .icon{
+        color:deeppink;
+        font-size:20px;
+        }
+         .Company-name{
+         color:deeppink;
+         text-align:center;
+         display:block; 
+         Font-weight:800;
+         font-family: 'Monoton', cursive;
+         }
+         nav{
+         display:flex;
+         Justify-content:space-around; 
+         align-items:center;
+         }
+         header{
+         position:fixed;
+         width:100%;
+        background:white;
+        z-index:1;
+         }
+         .general{
+          padding:0 1.4rem;
+         }
+         .general:hover{
+         border-bottom:2px solid lime; 
+         }
+        
+         .badge{
+         background:pink;
+         border-radius:0.3rem;
+         padding:0.2rem;
+         }
+         .spoiler{
+        background-image:url("back.jpeg");
+         background-size:contain;
+         
+         padding:0.8rem;
+         Margin:1rem 0.5rem;
+         border-radius:6px;
+        color:white; 
+         }
+         
+         .text{
+         color:hotpink;
+         }
+         .detail{
+         display:flex;
+         justify-content:space-around; 
+         margin:0.5rem;
+         padding:0.4rem;
+         background:black;
+         border-radius:5px;
+         color:white;
+         }
+         .pair{
+         font-size:0.8rem;
+         font-weight:900;
+         }
+         .rate{
+         font-size:0.3rem;
+         color:lime;
+         font-weight:900;
+         }
+         .Full-price{
+         font-size:0.6rem;
+         font-weight:900;
+         }
+         .price{
+        font-size:0.4rem;
+        opacity:0.5;
+        font-weight:900;
+    
+         }
+         .wallet{
+      /*   background-image:linear-gradient(340deg,white,hotpink);*/
+      background-image:url("mobile_wallet.gif");
+      background-size:contain;
+      background-repeat:no-repeat; 
+          margin:0.5rem;
+         padding:0.4rem;
+         border-radius:5px;
+         }
+           .securebadge{
+         background:red;
+         border-radius:1rem;
+         padding:0.2rem;
+         Font-size:0.8rem;
+         color:white;
+         font-weight:900;
+         }
+         .money{
+         color:grey;
+         }
+         .wallet-text{
+         color:hotpink;
+         font-weight:900;
+         }
+         .start{
+         border:none;
+         Width:90%;
+         padding:1rem 2.1rem;
+         border-radius:1.5rem;
+         background:royalblue;
+         color:white;
+        font-weight:900;
+         }
+         
+        .btn-con{
+        text-align:center;
+        }
+        .basic{
+        color:hotpink;
+        margin:0.5rem;
+        }
+        .wonder{
+        width:100%;
+        }
+        .shure{
+        color:hotpink;
+        font-weight:800;
+        text-shadow:0 0 5px gray; 
+        }
+        .sellbuy{
+        color:lime;
+        padding:0.8rem;
+        background:black;
+        display:inline-block;
+        Transform:skew(5deg);
+        }
+        .Exrate{
+        text-align:center;
+        border:2px solid hotpink; 
+        border-radius:0.6rem;
+        }
+        .Exrate h1{
+        background:hotpink;
+        color:white;
+        margin-top:0;
+        }
+        .rateDetails{
+        padding:0.8rem;
+        background:hotpink;
+        color:white;
+        display:inline-block;
+        Transform:skew(5deg);
+        }
+        .contact{
+        text-align:center;
+        border:2px solid hotpink; 
+        border-radius:0.6rem;
+        margin:0.5rem;
+        }
+        .contact h1{
+        background:hotpink;
+        color:white;
+        margin-top:0;
+        }
+        .contact a{
+        color:hotpink;
+        font-size:1.2rem;
+        }
+        .link1{
+        background:hotpink;
+        color:white;
+        margin:0rem;
+        padding:0.8rem;
+        }
+        .link2{
+        background:deeppink;
+        color:white;
+        margin:0rem;
+        text-align:center;
+        word-spacing:0.5rem;
+        padding:0.8rem;
+        }
+        footer a{
+        color:white;
+        text-decoration:none;
+        font-weight:800;
+        }
+        #scroll{
+        position:fixed;
+        right:5%;
+        bottom:10%;
+        background:hotpink;
+        color:white;
+        border-radius:50%;
+        padding:1rem;
+        z-index:2;
+        }
+        #scroll a{
+        color:white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span  class="Company-name">ShureExchange</span>
+        <br/>
+        <nav class="top-nav">
+            <div class="bitbucket general">
+                <i class="fa fa-bitbucket icon" aria-hidden="true"></i>
+            </div>
+            <div class="home general">
+              <a href="#head"><i class="fa fa-home icon " aria-hidden="true"></i></a>
+            </div>
+            <div class="menu general">
+                <i class="fa fa-bars icon" aria-hidden="true"></i>
+            </div>
+        </nav>
+       <br/>
+    </header>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
+    <article id="head" class="spoiler">
+        <h2 class="text">Best Bitcoin exchangers</h2>
+        <h3 class="shure">#ShureExchange</h3></h3><br/>
+        <span class="badge">HOT🔥</span>
+    </article>
+    <article class="detail">
+        <div>
+           <span class="pair">ET/USDT</span><span class="rate">+52.72%</span><br/>
+           <span class="Full-price">1.6800</span><br/>
+           <span class="price">$1.68</span>
+        </div>
+        <div>
+             <span class="pair">BTC/USDT</span><span class="rate">+1.92%</span><br/>
+           <span class="Full-price">19676.4</span><br/>
+           <span class="price">$19676.00</span>
+        </div>
+        <div>
+             <span class="pair">ETH/USDT</span><span class="rate">+0.13%</span><br/>
+           <span class="Full-price">1338.106</span><br/>
+           <span class="price">$1338.10</span>
+        </div>
+    </article>
+    <article class="wallet">
+        <span class="wallet-text">We have a safe and secure wallet</span>
+        <span class="securebadge">secure</span><br/>
+        <p class="shure">ShureWallet</p>
+        <div class="btn-con">
+        <button class="start">Get Started <i class="fa fa-money money" aria-hidden="true"></i> </button>
+        </div>
+    </article>
+    <article class="basic">
+        <img src="wonder.jpeg" class="wonder" alt="wonder"/>
+        <h3>Are you wondering?... </h3>
+        <h1>HOW MUCH DO WE SALE AND BUY?</h1>
+        <div class="Exrate">
+            <h1>Our Exchange Rate</h1>
+            <span class="rateDetails">We sell at :</span><span Class="sellbuy">$2.00</span><br/><br/>
+            <span class="rateDetails">We buy at :</span><span class="sellbuy">$0.86</span>
+            <br/>
+            <br/>
+        </div>
+    </article>
+    <article class="contact">
+        <h1>Our Contact</h1>
+        <p>Phone number:08174760916</p>
+        <p>Email :angelaekoh@gmail.com</p>
+        <h2>Our Social handles</h2>
+        <p><a href="https://www.facebook.com/angelina.ekoh" ><i class="fa fa-facebook-official " aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/angelina.ekoh"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/angelina.ekoh"><i class="fa fa-telegram" aria-hidden="true"></i></a></p>
+    </article>
+      <div id="scroll">
+       <a href="#head"> <i class="fa fa-arrow-up scroll" aria-hidden="true"></i></a>
+    </div>
+    
+    
+    <footer>
+
+        <div class="link1">
+            <h2>Quick links</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/angelina.ekoh">BUY</a></li>
+                 <li><a href="https://www.facebook.com/angelina.ekoh">SELL</a></li>
+                  <li><a href="https://www.facebook.com/angelina.ekoh">MINE</a></li>
+                  <li><a href="https://www.facebook.com/angelina.ekoh">ETHERUM</a></li>
+                  <li><a href="https://www.facebook.com/angelina.ekoh">BITCOIN</a></li>
+                  <li><a href="">SHUREWALLET</a></li>
+            </ul>
+        </div>
+        <div class="link2">
+            <p><a href="#head">HOME-</a><a href="https://www.facebook.com/angelina.ekoh">ABOUT-</a><a href="">FAQ-</a><a href="https://www.facebook.com/angelina.ekoh">CONTACT</a></p>
+            <p>ShureExchange|©2022</p>
+        </div>
+    </footer>
+</body>
+</html>
